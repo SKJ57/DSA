@@ -1,5 +1,5 @@
 import java.util.*;
-
+//using recursion
 public class Stairs {
     public static int climbStairs(int n) {
         if(n==1 || n==2){
@@ -13,4 +13,5 @@ public class Stairs {
         int res = climbStairs(n);
         System.out.println(res);
     }
+
 }
