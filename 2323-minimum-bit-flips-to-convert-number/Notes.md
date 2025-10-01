@@ -1,1 +1,1 @@
-<h2>minimum-bit-flips-to-convert-number Notes</h2><hr>[ Time taken: 4 m 5 s ]
+<h2>minimum-bit-flips-to-convert-number Notes</h2><hr>[ Time taken: 3 m 11 s ]
