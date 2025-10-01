@@ -1,9 +1,10 @@
 class Solution {
     public int minBitFlips(int start, int goal) {
-        String xor = Integer.toBinaryString(start^goal);
+        int xor = start^goal;
         int count = 0;
-        for(char c: xor.toCharArray()){
-            if (c=='1') count++;
+        while(xor!=0){
+            count += (xor&1);
+            xor>>=1;
         }
         return count;
     }
