@@ -1,2 +1,2 @@
 # DSA
-LeetCode solutions in Java
+Solutions to some Leetcode problems in Java
