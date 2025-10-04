@@ -1,9 +1,13 @@
 class Solution {
     public char findTheDifference(String s, String t) {
-        char res = 0;
-        for(char c: s.toCharArray()) res^=c;
-        for(char c: t.toCharArray()) res^=c;
+        char[] s1 = s.toCharArray();
+        char[] s2 = t.toCharArray();
+        Arrays.sort(s1);
+        Arrays.sort(s2);
 
-        return res;
+        for(int i=0; i<t.length()-1; i++){
+            if(s1[i]!=s2[i]) return s2[i];
+        }
+        return s2[s2.length-1];
     }
 }
