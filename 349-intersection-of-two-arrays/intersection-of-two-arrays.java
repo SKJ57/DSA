@@ -10,10 +10,10 @@ class Solution {
         }
         HashSet<Integer> cSet = new HashSet<>(set1);
         cSet.retainAll(set2);
-        List<Integer> ls = new ArrayList<>(cSet);
-        int[] arr = new int[ls.size()];
-        for(int i=0; i<arr.length; i++){
-            arr[i] = ls.get(i);
+        int i=0;
+        int[] arr = new int[cSet.size()];
+        for(int num : cSet){
+            arr[i++] = num;
         }
 
         return arr;
